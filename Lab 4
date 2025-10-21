@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "0cf18cb0",
+      "cell_type": "markdown",
+      "source": "# Lab 4: Working with Dictionaries in Byteville\nWelcome to Byteville! This lab will help you practice dictionary creation, access, updates, iteration, and logical conditions. Answer the questions below by completing the code cells.",
+      "metadata": {}
+    },
+    {
+      "id": "cea06b22",
+      "cell_type": "markdown",
+      "source": "### Question 1\nCreate a dictionary `library_books` that maps book titles to the number of available copies. Include at least 3 books. Print the dictionary.",
+      "metadata": {}
+    },
+    {
+      "id": "b0bb14e2",
+      "cell_type": "code",
+      "source": "# Your Code Here\nlibrary_books = {\n    'Binary Basics': 4,\n    'Intro to Loops': 2,\n    'The Byte Guide': 6\n}\nprint(library_books)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "462dd05f",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "895543c5",
+      "cell_type": "markdown",
+      "source": "### Question 2\nPrint the number of copies available for 'Intro to Loops'.",
+      "metadata": {}
+    },
+    {
+      "id": "0849c411",
+      "cell_type": "code",
+      "source": "# Your Code Here\nprint(library_books['Intro to Loops'])",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "e2ff492b",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "9498ed02",
+      "cell_type": "markdown",
+      "source": "### Question 3\nAdd a new book 'Cyber Circuits' with 5 copies to the dictionary.",
+      "metadata": {}
+    },
+    {
+      "id": "20d4146c",
+      "cell_type": "code",
+      "source": "# Your Code Here\nlibrary_books['Cyber Circuits'] = 5\nprint(library_books)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "ae7e442a",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "ca8d22f1",
+      "cell_type": "markdown",
+      "source": "### Question 4\nUpdate 'Binary Basics' to have 6 copies instead of 4.",
+      "metadata": {}
+    },
+    {
+      "id": "9754d647",
+      "cell_type": "code",
+      "source": "# Your Code Here\nlibrary_books['Binary Basics'] = 6\nprint(library_books)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "ad794543",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "c2658ee4",
+      "cell_type": "markdown",
+      "source": "### Question 5\nRemove 'The Byte Guide' from the dictionary.",
+      "metadata": {}
+    },
+    {
+      "id": "13954421",
+      "cell_type": "code",
+      "source": "# Your Code Here\ndel library_books['The Byte Guide']\nprint(library_books)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "6d6e55b0",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "0e59a54d",
+      "cell_type": "markdown",
+      "source": "### Question 6\nCheck if 'Cyber Circuits' is in the dictionary. Print a message if it exists.",
+      "metadata": {}
+    },
+    {
+      "id": "9b14a2d2",
+      "cell_type": "code",
+      "source": "# Your Code Here\nif 'Cyber Circuits' in library_books:\n    print('Cyber Circuits is in the library!')",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "189e43b3",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "3bfbdd87",
+      "cell_type": "markdown",
+      "source": "### Question 7\nCreate a dictionary called `student_scores` that maps student names to test scores.",
+      "metadata": {}
+    },
+    {
+      "id": "55a5bf0d",
+      "cell_type": "code",
+      "source": "# Your Code Here\nstudent_scores = {\n    'Alex': 88,\n    'Bree': 94,\n    'Chris': 76\n}\nprint(student_scores)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "2702aeb1",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "6aa59419",
+      "cell_type": "markdown",
+      "source": "### Question 8\nPrint out only the names of students (dictionary keys).",
+      "metadata": {}
+    },
+    {
+      "id": "737d4d96",
+      "cell_type": "code",
+      "source": "# Your Code Here\nprint(student_scores.keys())",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "8551e934",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "c6fe2b32",
+      "cell_type": "markdown",
+      "source": "### Question 9\nPrint out the average test score.",
+      "metadata": {}
+    },
+    {
+      "id": "f0d86531",
+      "cell_type": "code",
+      "source": "# Your Code Here\navg = sum(student_scores.values()) / len(student_scores)\nprint('Average score:', avg)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "f844c0e8",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "aa19a37a",
+      "cell_type": "markdown",
+      "source": "### Question 10\nUse a loop to print each student’s name and their score.",
+      "metadata": {}
+    },
+    {
+      "id": "f98d3294",
+      "cell_type": "code",
+      "source": "# Your Code Here\nfor name, score in student_scores.items():\n    print(f'{name}: {score}')",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "a9e74bf0",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "fad6223c",
+      "cell_type": "markdown",
+      "source": "### Question 11\nAdd a student 'Dana' who scored 91.",
+      "metadata": {}
+    },
+    {
+      "id": "526c3a6b",
+      "cell_type": "code",
+      "source": "# Your Code Here\nstudent_scores['Dana'] = 91\nprint(student_scores)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "777ac4e3",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "fa9d6521",
+      "cell_type": "markdown",
+      "source": "### Question 12\nCreate a dictionary `flavor_ratings` for 3 ice cream flavors and their ratings (1-10).",
+      "metadata": {}
+    },
+    {
+      "id": "0a2765d0",
+      "cell_type": "code",
+      "source": "# Your Code Here\nflavor_ratings = {\n    'Vanilla': 7,\n    'Mint': 9,\n    'Chocolate': 8\n}\nprint(flavor_ratings)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "2dcc9b88",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "7dc6b0e8",
+      "cell_type": "markdown",
+      "source": "### Question 13\nPrint only the flavors that have ratings above 7.",
+      "metadata": {}
+    },
+    {
+      "id": "682ad629",
+      "cell_type": "code",
+      "source": "# Your Code Here\nfor flavor, rating in flavor_ratings.items():\n    if rating > 7:\n        print(flavor)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "2a3a98b2",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "c008f994",
+      "cell_type": "markdown",
+      "source": "### Question 14\nCreate a dictionary `city_zones` with three zone names and number of residents. Print the total residents.",
+      "metadata": {}
+    },
+    {
+      "id": "7619212e",
+      "cell_type": "code",
+      "source": "# Your Code Here\ncity_zones = {\n    'CoreZone': 1100,\n    'Streamline': 900,\n    'GridHub': 1300\n}\nprint('Total:', sum(city_zones.values()))",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "6ec09b60",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "12d5b7dd",
+      "cell_type": "markdown",
+      "source": "### Question 15\nPrint out just the zone names.",
+      "metadata": {}
+    },
+    {
+      "id": "a03eb08d",
+      "cell_type": "code",
+      "source": "# Your Code Here\nprint(city_zones.keys())",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "c8075ce1",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "f5b1f665",
+      "cell_type": "markdown",
+      "source": "### Question 16\nCreate a dictionary of usernames and passwords (just sample data). Print only the usernames.",
+      "metadata": {}
+    },
+    {
+      "id": "4301b54b",
+      "cell_type": "code",
+      "source": "# Your Code Here\nusers = {\n    'taylor123': 'p@ss1',\n    'juno456': 'abcD#9',\n    'sam789': 'hello2023'\n}\nprint(users.keys())",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "1bce9af1",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "00a8ec0d",
+      "cell_type": "markdown",
+      "source": "### Question 17\nYou’re managing a digital art gallery. Create a dictionary mapping artwork titles to their artists. Then print a sentence for each artwork.",
+      "metadata": {}
+    },
+    {
+      "id": "0d0fca76",
+      "cell_type": "code",
+      "source": "# Your Code Here\nartworks = {\n    'Reflections': 'Ava Liu',\n    'Pixel Path': 'Jamal Ray',\n    'Code Canvas': 'Mei Tran'\n}\nfor title, artist in artworks.items():\n    print(f'The artwork \"{title}\" was created by {artist}.')",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "4298a14b",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "6c9f64c2",
+      "cell_type": "markdown",
+      "source": "### Question 18\nCreate a dictionary `inventory` mapping item names to quantities in a store. Add a new item and print the updated dictionary.",
+      "metadata": {}
+    },
+    {
+      "id": "62013acf",
+      "cell_type": "code",
+      "source": "# Your Code Here\ninventory = {\n    'Keyboard': 10,\n    'Mouse': 20,\n    'Monitor': 5\n}\ninventory['Webcam'] = 8\nprint(inventory)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "1bedaee4",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "be06263a",
+      "cell_type": "markdown",
+      "source": "### Question 19\nCreate a dictionary of 3 streets and their speed limits. Print streets with a speed limit under 30.",
+      "metadata": {}
+    },
+    {
+      "id": "2ff81080",
+      "cell_type": "code",
+      "source": "# Your Code Here\nstreets = {\n    'Byte Blvd': 25,\n    'Loop Lane': 35,\n    'Cache Crescent': 20\n}\nfor street, limit in streets.items():\n    if limit < 30:\n        print(street)",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "002b6f54",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    },
+    {
+      "id": "e2c8a2a2",
+      "cell_type": "markdown",
+      "source": "### Question 20\nBuild a dictionary of pet names and species. Ask the user to enter a name and tell them the pet type or if it’s not found (use `.get()`).",
+      "metadata": {}
+    },
+    {
+      "id": "7f333682",
+      "cell_type": "code",
+      "source": "# Your Code Here\npets = {\n    'Nemo': 'fish',\n    'Luna': 'cat',\n    'Buddy': 'dog'\n}\nname = input('Enter a pet name: ')\nprint(pets.get(name, 'Pet not found'))",
+      "metadata": {},
+      "outputs": [],
+      "execution_count": null
+    },
+    {
+      "id": "c84ef4ec",
+      "cell_type": "markdown",
+      "source": "Explain your code here:",
+      "metadata": {}
+    }
+  ]
+}
